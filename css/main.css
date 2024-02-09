@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto;
 }
 
-.section__title {
+.section-title {
     font-size: 34px;
     font-weight: 700;
     text-align: center;
@@ -131,19 +131,26 @@ img {
 }
 
 .author__desc {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .author__lang {
-    rotate: -90deg;
-    padding-top: 50px;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    transform: rotate(180deg);
+    column-gap: 5px;
+    align-items: end;
 }
 
 .author__lang-item {
     color: #828282;
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+    
 }
 
 .author__lang-item:hover {
@@ -152,6 +159,11 @@ img {
 
 .author__lang span {
     color: #000000;
+}
+
+.img-container-align {
+    width: 100%;
+    max-width: 940px;
 }
 
 /* ----Второй экран---- */
@@ -294,3 +306,21 @@ img {
 .social-media__caption {
     margin-top: 45px;
 }
+
+.social-media__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto ;
+}
+.social-media__list a {
+    text-decoration: none;
+    color: #828282;
+}
+.desc-text_gray {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #828282;
+}
+
